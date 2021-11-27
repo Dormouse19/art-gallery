@@ -1,0 +1,264 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 1180px;
+
+}
+
+.text-bold {
+    font-weight: 600;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+/* Header */
+.header {
+    display: flex;
+}
+
+.header_content {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+}
+
+/* Logo */
+.logo {
+    height: 100%;
+}
+
+.logo > img {
+    height: 100%;
+    width: auto;
+}
+
+/* Nav*/
+.nav {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    transition: color .1s linear;
+    position: relative;
+}
+
+.nav__link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #228b22;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.nav__link:hover { 
+    color: #228b22;
+}
+
+.nav__link:hover::after {
+    opacity: 1;
+}
+ 
+/* Banner */
+.banner {
+    color: #fff;
+    background: #ccc;
+    width: 100%;
+    padding: 100px 0;
+    background-image: url('../img/banner.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.banner-inner {
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+}
+
+.section-title {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #228b22;
+    margin: 40px auto;
+}
+
+.banner-text {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.banner-text::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 60px;
+    background-color: #000;
+    margin: 60px auto;
+
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: background .1s linear, color .1s linear;
+}
+
+.btn:hover {
+    content: "";
+    background-color: #228b22;
+    color: #fff;
+    border-color: #228b22; 
+}
+
+/* Section */
+.section {
+    padding: 80px 0;
+}
+
+.section-header {
+    width: 100%;
+    margin: 0 auto 40px;
+    max-width: 1180px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 24px;
+    color: #000;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 400;
+
+}
+
+/* About */
+.about {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.about-item {
+    width: 300px;
+    background-color: #95e1d3;
+    position: relative;
+}
+
+.about-item:hover .about-img {
+    transform: translate3d(-10px, -10px, 0);
+}
+
+.about-item:hover .about-img img {
+    opacity: .2;
+}
+
+.about-item:hover .about-text {
+    opacity: 1;
+}
+
+.about-img {
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+    transition: transform .2s linear;
+}
+
+.about-img img {
+    display: block;
+    transition: opacity .1s linear;
+}
+
+.about-text {
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translate3d(0, -50%, 0);
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    height: auto;
+    padding-top: 25px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer::before {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 1180px;
+    background-color: #a9a9a9;
+    margin: 10px auto;
+}
+
+.footer_nav {
+    text-align: center;
+}
+
+/* Social */
+.social img {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.icons {
+    width: 30px;
+    height: 30px;
+    margin: auto 10px;
+    margin-bottom: 10px;
+    opacity: 1;
+}
