@@ -225,6 +225,10 @@ h1, h2, h3 {
     opacity: 0;
     transition: opacity .2s linear;
 }
+.card {
+    width: 300px;
+    height: 300px;
+}
 
 /* Footer */
 .footer {
@@ -249,20 +253,22 @@ h1, h2, h3 {
 }
 
 /* Social */
-.social img {
-    margin-left: 10px;
-    margin-top: 10px;
+.social-icons {
+    display: inline-block;    
+    text-align: center;
+    padding: 12px 10px;
+    position: relative;
+    opacity: 1;
+    transition: background .1s linear, color .1s linear;
 }
 
-.social img:hover {
+.icons:hover {
     background-color: #228b22;
-    border-radius: 30%;
 }
 
 .icons {
     width: 30px;
     height: 30px;
-    margin: auto 10px;
-    margin-bottom: 10px;
-    opacity: 1;
+    margin: 0 10px;
+    border-radius: 30%;
 }
