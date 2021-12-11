@@ -140,9 +140,11 @@ h1, h2, h3 {
     display: inline-block;
     vertical-align: top;
     padding: 10px 20px;
+    margin-right: 10px;
     border: 2px solid #000;
     color: #000;
     text-transform: uppercase;
+    text-decoration: none;
     font-size: 16px;
     font-weight: 400;
     text-decoration: none;
@@ -153,7 +155,14 @@ h1, h2, h3 {
     content: "";
     background-color: #228b22;
     color: #fff;
+    text-decoration: none;
     border-color: #228b22; 
+}
+
+.btn_block {
+    display: flex;
+    align-items: center;
+    margin: auto 10px;
 }
 
 /* Section */
@@ -289,3 +298,14 @@ h1, h2, h3 {
     text-align: center;
 }
 
+/* Аукцион */
+.torg {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 60px;
+}
+
+
+.torg_inner {
+    text-align: center;
+}
