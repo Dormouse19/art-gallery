@@ -101,7 +101,7 @@ h1, h2, h3 {
     flex-direction: column;
     height: 300px;
     text-align: center;
-    color: #000;
+    color: #fff;
     font-size: 20px;
 }
 
@@ -149,6 +149,7 @@ h1, h2, h3 {
     font-weight: 400;
     text-decoration: none;
     transition: background .1s linear, color .1s linear;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -354,7 +355,7 @@ h1, h2, h3 {
  
 /* Contact */
 .contact_wrapper {
-    width: 753px;
+    width: 800px;
     margin: 0 auto;
     color: #000;
 }
@@ -365,30 +366,42 @@ h1, h2, h3 {
 
 .form_inputs {
     display: flex;
+    flex-direction: column;
 }
 
 .input {
-    width: 360px;
-    height: 40px;
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
-.input:first-of-type {
-    margin-right: 23px;
+    height: 32px;
+    font-size: 18px;
+    border-radius: 4px;
 }
 
 .textarea {
     width: 100%;
-    height: 163px;
 }
 
 .input, textarea {
     border: 1px solid #999999;
-    margin-top: 5px;
 }
 
 .button_block {
     display: flex;
     justify-content: flex-end;
+}
+
+.contact_link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 32px;
+}
+
+.form-group {
+    display: grid;
+    margin-bottom: 16px;
+}
+
+.mini {
+    width: 300px;
+    height: 250px;
 }

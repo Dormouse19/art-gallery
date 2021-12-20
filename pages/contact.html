@@ -46,24 +46,29 @@
       <h2 class="section-title">Контакты</h2>
         <p>Здесь вы модете найти информацию о нас и оставить свою. Можно заполнить свои данные для получения картины с аукциона, также если вы молодой художник.</p>
     </div>
+    <div class="contact_wrapper">
     <div class="about_us">
       <h2>Контактная информация</h2>
       <div class="icons_about">
-        <a><img class="icons_us" src="../img/social_icons/house.svg"></a><p>305009 г. Курск ул. Октябрьская д. 85</p>
-        <a><img class="icons_us" src="../img/social_icons/phone.svg"></a><p>+7(951)323-73-90</p>
-        <a><img class="icons_us" src="../img/social_icons/letter.svg"></a><p>art_deja_vu@gmail.com</p>
+        <a class="contact_link" href="https://goo.gl/maps/G3W4wFjCH5orwn376" target="_blank"><img class="icons_us" src="../img/social_icons/house.svg"><p>305009 г. Курск ул. Октябрьская д. 85</p></a>
+        <a class="contact_link" href="tel:79513237390"><img class="icons_us" src="../img/social_icons/phone.svg"><p>+7(951)323-73-90</p></a>
+        <a class="contact_link" href="mailto:art_deja_vu@gmail.com"><img class="icons_us" src="../img/social_icons/letter.svg"><p>art_deja_vu@gmail.com</p></a>
       </div>
+    </div>
     </div>
   </section>
   <section class="contact_from">
     <div class="contact_wrapper">
-      <form action="#" name="newform" method="post">
+      <form name="newform" method="post" id="comment">
         <div class="form_inputs">
-          <p>Имя<span class="red">*</span><input type="text"></p>
-          <p>Email<span class="red">*</span><input type="text"></p>
+          <div class="form-group"><label for="name">Имя<span class="red">*</span></label><input id="name" name="name" type="text" class="input" required></div>
+          <div class="form-group"><label for="email">Email<span class="red">*</span></label><input id="email" name="email" type="email" class="input" required></div>
         </div>
-        <p>Коментарий<span class="red">*</span></p>
-        <textarea name="text"></textarea>
+        <div class="form-group">
+          <label for="comment">Коментарий<span class="red">*</span></label>
+          <textarea rows="5" id="comment" name="comment" required></textarea>
+        </div>
+        <button class="btn" type="submit">Отправить</button>
       </form>
     </div>
   </section>
